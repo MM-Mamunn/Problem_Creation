@@ -37,10 +37,12 @@ mono
 1
 
 Tc 3:
+4 4
 1 0 0 0
 1 0 1 0
 1 1 1 1
 0 0 0 0
 
 Output:
-mono 1
+mono
+1
