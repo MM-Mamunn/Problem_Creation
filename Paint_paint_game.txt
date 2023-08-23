@@ -1,0 +1,46 @@
+	                  Paint Paint game
+-----------------------------------------------------------------
+
+There are n*m cells in a field,there are some gamer person standing on the cells ,atmost one person in one cell.A cell with a person standing on it denotes by 1 and empty cells are denotes by 0.
+you are the King of this world with infinity number of pots with infinity amount of colour.
+you can give any number of pots to any number of people.
+A people with a colour pot can colour himself and can pass the pot to any of the person in adjacent cell.
+
+Check The game is mono or poly,and print the number of minimum pots required.
+iff the minimum number of pots required is 1 than the game is mono otherwise the game is poly.
+
+
+
+
+N.B there is atleast one person in the game.
+
+{input two integer n,m(1<=n,m<=10000); and n*m grids of integers;}
+
+Tc 1 :
+4 5
+1 1 0 0 0
+1 1 1 0 1
+1 1 0 1 0
+0 0 0 1 0
+
+Output:
+poly
+3
+
+Tc 2:
+2 2 
+1 0 
+0 0
+
+Output:
+mono
+1
+
+Tc 3:
+1 0 0 0
+1 0 1 0
+1 1 1 1
+0 0 0 0
+
+Output:
+mono 1
