@@ -9,7 +9,7 @@ A person with a colour pot can colour himself and can pass the pot to any of the
 The persons are not greedy they want to give the pot to other if there is any need.
 
 Check the game is happy or sad.
-The game is happy if everyone can colour themselves with the optimal usage of the pots otherwise sad
+The game is happy if everyone can colour themselves with the optimal distribution of the pots by the king otherwise sad
 
 
 N.B there is atleast one person in the game.
