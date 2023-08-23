@@ -1,0 +1,49 @@
+	                  Happy Game
+-----------------------------------------------------------------
+
+There are n*m cells in a field,there are some  person standing on the cells ,atmost one person in one cell.A cell with a person standing on it denotes by 1 and empty cells are denotes by 0.
+if a person can colour himself then he is happy otherwise sad.
+you are the King of this Game with k number of pots ,each pot consists of infinity amount of colour.
+you can give one pot to one person,and can give all pots for the happiness of the game.
+A person with a colour pot can colour himself and can pass the pot to any of the person in adjacent cell.
+The persons are not greedy they want to give the pot to other if there is any need.
+
+Check the game is happy or sad.
+The game is happy if everyone can colour themselves with the optimal usage of the pots otherwise sad
+
+
+N.B there is atleast one person in the game.
+
+{input two integer n,m(1<=n,m<=10000); and the number k >=1;and n*m grids of integers;}
+
+Tc 1 :
+4 5
+2
+1 1 0 0 0
+1 1 1 0 1
+1 1 0 1 0
+0 0 0 1 0
+
+Output:
+Sad
+
+Tc 2:
+2 2 
+3
+1 0 
+0 0
+
+Output:
+Happy
+
+
+Tc 3:
+4 4
+1
+1 0 0 0
+1 0 1 0
+1 1 1 1
+0 0 0 0
+
+Output:
+Happy
