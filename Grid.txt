@@ -1,0 +1,43 @@
+You're given n*m grid each cell containing either 0 or 1.
+A segment is made with only cells with '1'.
+If (i,j) cell is '1',then it is connected to atleast an adjacent cell  with value '1' in any of four direction of an existing segments ,
+Or the (i,j) cell itself a segment with only one number of '1'.Determine the given grid is mono or poly,and the number of segments exist.
+Mono is defined iff there is only one segment otherwise it's poly.
+
+N.B:
+ there is atleast one 1 cell.
+ Adjacent cells of cell(i,j) are (i+1,j), (i-1,j), (i,j+1), (i,j-1)
+
+{input two integer n,m(1<=n,m<=10000); and n*m grids of integers;}
+
+print wether it is mono or poly and in next line print the number of segments
+
+Tc 1 :
+4 5
+1 1 0 0 0
+1 1 1 0 1
+1 1 0 1 0
+0 0 0 1 0
+
+Output:
+poly
+3
+
+Tc 2:
+2 2 
+1 0 
+0 0
+
+Output:
+mono
+1
+
+Tc 3:
+1 0 0 0
+1 0 1 0
+1 1 1 1
+0 0 0 0
+
+Output:
+mono
+1
