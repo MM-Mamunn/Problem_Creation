@@ -1,3 +1,5 @@
+problem link -->  https://www.hackerrank.com/contests/welcome-challange-by-mm/challenges/paint-paint-game/problem
+
 	                  Paint Paint game
 -----------------------------------------------------------------
 
