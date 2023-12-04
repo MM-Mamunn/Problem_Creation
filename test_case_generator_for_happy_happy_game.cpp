@@ -50,7 +50,7 @@ void check(ll n, ll m )
 
 int main()
 {
-    ///remove comment next to line to find the number of components that is the number of minimum pot required
+    ///remove comment of next two line to find the number of components that is the number of minimum pot required
     // check(n,m);
     //return 0;
    /// n & m declared globally
