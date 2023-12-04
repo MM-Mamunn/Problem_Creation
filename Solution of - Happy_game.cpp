@@ -1,43 +1,25 @@
 #include<bits/stdc++.h>
 using namespace std;
-
+int xm[4] = { -1, 0, 0, 1};
+int ym[4] = {0, 1, -1, 0};
 int n,m;
 int  arr[100][100];
 bool vis[100][100]= {false};
 
-void bfs(int i,int j)
+void dfs(int i,int j)
 {
     vis[i][j] =true;
-    queue<pair<int,int >>q;
-    q.push({i,j});
-    while(!q.empty())
+    for(int l =0;l<4;l++)
     {
-        pair <int,int > t = q.front();
-        q.pop();
-        if((t.second+1)<m && vis[t.first][t.second+1] == false && arr[t.first][t.second+1] ==1 )
+        int tx = i + xm[l];
+        int ty = j + ym[l];
+        if(tx>=0 && tx <n && ty>=0 && ty<m && vis[tx][ty]== 0 && arr[tx][ty] ==1)
         {
-            vis[t.first][t.second+1]=true;
-            q.push({t.first,(t.second+1)});
+            dfs(tx,ty);
         }
-        if((t.second-1)>=0 && vis[t.first][t.second-1] == false && arr[t.first][t.second-1]==1 )
-        {
-            vis[t.first][t.second-1]=true;
-            q.push({t.first,(t.second-1)});
-        }
-        if((t.first +1)<n && vis[t.first+1][t.second] == false && arr[t.first+1][t.second] ==1 )
-        {
-            vis[t.first+1][t.second]=true;
-            q.push({t.first+1,(t.second)});
-        }
-        if((t.first -1)>=0 && vis[t.first-1][t.second] == false && arr[t.first-1][t.second] ==1 )
-        {
-            vis[t.first-1][t.second]=true;
-            q.push({t.first-1,(t.second)});
-        }
+
     }
 }
-
-
 
 int main()
 {
@@ -55,10 +37,9 @@ int main()
             if(arr[i][j] ==1 && vis[i][j] == false)
             {
                 cnt+=1;
-                bfs(i,j);
+                dfs(i,j);
             }
         }
-//cout<<"cnt "<<cnt<<endl;
     if(cnt<= k)
         cout<<"HAPPY\n";
     else
