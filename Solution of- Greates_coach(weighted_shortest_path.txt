@@ -24,6 +24,7 @@ using namespace std;
 const ll mx = 100002;
 vector< pair<ll,ll>>v[mx];
 ll arr[mx];
+ll path[mx];
 ll n;
 void dijk ()
 {
@@ -40,6 +41,7 @@ void dijk ()
             {
                 arr[a.ff]= a.ss + now;
                 p.push({arr[a.ff],a.ff});
+                path[a.ff]=u;
             }
         }
     }
@@ -63,11 +65,20 @@ int main()
     dijk();
 
     if(arr[11] == LLONG_MAX)
-        noo;
+        cout<<"NO GOAL\n";
     else
     {
-        yess;
+        cout<<"GOAL\n";
         cout<<arr[11]<<el;
+        ll i = 11;
+        cout<<11<<" ";
+        while(path[i] != n)
+        {
+            cout<<path[i]<<" ";
+            i = path[i];
+        }
+        cout<<n<<el;
     }
+
     return 0;
 }
