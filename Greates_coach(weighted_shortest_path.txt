@@ -1,0 +1,53 @@
+Problem link --> https://www.hackerrank.com/contests/welcome-challange-by-mm/challenges/greatest-coach
+
+							Greatest Coach
+---------------------------------------------------------------------------------------------------------------------------------------
+
+You're the greatest coach of Football history.You can analyze every factor of the game and you always have a plan ready for the playing 11 of your team just before the match starts.
+your plan contains the passes that can be made between players with 100% accuracy.
+Your plan contains m line.each line contains 3 integers (u,v,w) that indicates player no 'u' & player no'v' can pass the ball between each other with 100% accuracy ,and they are at  'w' unit distance .
+Your plan is valid for any moment of the game.
+Your best and only Center forward player who is player no '11' has a 100% accuracy to score a goal if he get the ball.
+You're given the plan and an interger n, the instance of ball position that describes that at that particular moment the ball is on the foot of your player no 'n'.
+Is it possible to tell that it would be a goal with certainty?
+if yes, print the minimum distance the ball traveled before the scoring shot was made by your CF from the player 'n';
+
+(two integers 'n', 'm';
+next m lines contains three integers 'u', 'v' and 'w'
+
+1<=n<=11 , 1<=m<=20,
+'u' doesn't equal 'v' and 1<=u,v<=11
+1<=w<=200 )
+
+Sample Input 0
+
+1
+11
+1 2 4
+1 5 2
+1 3 1
+2 4 5
+3 4 2
+5 6 1
+6 7 5
+4 7 3
+7 8 2
+8 11 2
+9 10 11
+
+Sample Output 0
+
+YES
+10
+
+Sample Input 1
+
+2
+4
+2 10 1
+2 3 4
+3 4 6
+1 11 10
+Sample Output 1
+
+NO
