@@ -1,0 +1,27 @@
+			Squares of MM
+----------------------------------------------------------------------------------------------
+
+
+link : https://www.hackerrank.com/contests/welcome-challange-by-mm/challenges/squares-17-5
+
+
+You're given a rectengular shaped bread with n height and m width. You have to divide it in some squares such that all the squares are identical that is the sides of each squares are same. What is the minimun number of squares you can divide the bread into. The sum of the area of all squares should be the same as the initial bread
+
+int n ,m
+
+
+1<=n,m<=10^9
+
+int ans
+
+tc 1:
+input:
+10 10
+output:
+1
+
+tc 2 :
+input:
+15 10
+output:
+6

@@ -1,0 +1,36 @@
+#include<bits/stdc++.h>
+#include <numeric>
+#include <ext/pb_ds/tree_policy.hpp>
+#include <ext/pb_ds/assoc_container.hpp>
+using namespace std;
+
+#define goog(tno) cout << "Case #" << tno <<": "
+#define fast_io ios_base::sync_with_stdio(false);cin.tie(NULL)
+#define ll long long
+#define forc(c,n) for(int i=c;i<n;i++)
+#define PI (acos(-1.0))
+#define pb push_back
+#define vi vector<long long >
+#define all(a) sort(a.begin(),a.end());
+#define atoz(a)  a.begin(),a.end()
+#define rall(a) sort(a.rbegin(),a.rend());
+#define torad(x) ((x) * ((2*acos(0))/180.0))
+#define todeg(x) ((x) * (180.0/(2*acos(0))))
+#define el "\n"
+#define yess cout<<"YES"<<el
+#define noo cout<<"NO"<<el
+#define ff first
+#define ss second
+#define mp make_pair
+#define sz(x) (int)x.size()
+#define mem(arr,x) memset(arr,x,sizeof arr)
+#define MAX (ll)(1LL << 31) - 1
+
+int main()
+{
+       ll n,m;
+   cin>>n>>m;
+   ll gcd=__gcd(n,m);
+   cout<< (n*m) / (gcd * gcd);
+    return 0;
+}
